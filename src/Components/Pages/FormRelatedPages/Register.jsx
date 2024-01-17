@@ -1,5 +1,4 @@
 import { Link, useNavigate } from 'react-router-dom';
-// import { useGlobalContext } from '../../../context/AuthContext';
 import { useState } from 'react';
 import Swal from 'sweetalert2';
 import { useGlobalContext } from '../../AuthProvider/AuthContextFunction';

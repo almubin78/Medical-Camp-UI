@@ -3,7 +3,7 @@ import { useGlobalContext } from "../../AuthProvider/AuthContextFunction";
 
 const Navbar = () => {
   const {user,logOut} =useGlobalContext();
-  // console.log(import.meta.env.VITE_apiKey);
+  // console.log(user.photoURL);
   const handleLogOut = ()=>{
     logOut()
     .then(res=>{
@@ -22,11 +22,10 @@ const Navbar = () => {
         </div>
         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
           <li><NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/'>Home</NavLink></li>
-          <li><Link to='/mycart'>My Cart</Link></li>
+          <li><Link to='/available'>Available Camps</Link></li>
 
-          <li><Link to='/addItem'>Add Item</Link></li>
-          <li><Link to='/mission'>Our Mission</Link></li>
-          <li><Link to='/apply'>Apply as Partner</Link></li>
+          <li><Link to='/dashboard'>Dashboard</Link></li>
+          <li><Link to='/contact'>Contact Us</Link></li>
 
         </ul>
 
@@ -41,11 +40,11 @@ const Navbar = () => {
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1">
         <li className='mx-3'><Link to='/'>Home</Link></li>
-        <li className='mx-3'><Link to='/mycart'>My Cart</Link></li>
+        <li className='mx-3'><Link to='/available'>Available Camps</Link></li>
 
-        <li className='mx-3'><Link to='/addItem'>Add Item</Link></li>
-        <li className='mx-3'><Link to='/mission'>Our Mission</Link></li>
-        <li className='mx-3'><Link to='/apply'>Apply as Partner</Link></li>
+        <li className='mx-3'><Link to='/dashboard'>Dashboard</Link></li>
+        <li className='mx-3'><Link to='/contact'>Contact Us</Link></li>
+       
       </ul>
     </div>
     <div className="navbar-end">
@@ -53,8 +52,7 @@ const Navbar = () => {
         user ? <>
           <div className="avatar hidden lg:flex">
             <div className="w-16 rounded-full">
-              <img src='' alt='' />
-              {/* <img src={user.photoURL} alt='' /> */}
+              <img src={user.photoURL} alt='' />
             </div>
           </div>
 
