@@ -1,7 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
+import { useGlobalContext } from "../../AuthProvider/AuthContextFunction";
 
 const Navbar = () => {
-  const user = true;
+  const {user} =useGlobalContext();
+  // console.log(import.meta.env.VITE_apiKey);
   
   return (
     <div className="navbar bg-base-100">

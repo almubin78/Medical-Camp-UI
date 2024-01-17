@@ -2,13 +2,21 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB-jazGUhitiU-pjJC3YkgYQox-WchD5pY",
-  authDomain: "medical-camp-8aa20.firebaseapp.com",
-  projectId: "medical-camp-8aa20",
-  storageBucket: "medical-camp-8aa20.appspot.com",
-  messagingSenderId: "930526220479",
-  appId: "1:930526220479:web:07083077cfabfef5f1760a"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
+// const firebaseConfig = {
+//   apiKey:
+//   authDomain:
+//   projectId:
+//   storageBucket:
+//   messagingSenderId:
+//   appId:
+// };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
