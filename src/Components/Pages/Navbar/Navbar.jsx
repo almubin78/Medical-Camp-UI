@@ -2,9 +2,17 @@ import { Link, NavLink } from "react-router-dom";
 import { useGlobalContext } from "../../AuthProvider/AuthContextFunction";
 
 const Navbar = () => {
-  const {user} =useGlobalContext();
+  const {user,logOut} =useGlobalContext();
   // console.log(import.meta.env.VITE_apiKey);
-  
+  const handleLogOut = ()=>{
+    logOut()
+    .then(res=>{
+      console.log(res);
+    })
+    .catch(err=>{
+      console.log(err);
+    })
+  }
   return (
     <div className="navbar bg-base-100">
     <div className="navbar-start">
@@ -50,7 +58,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Link onClick='' className="btn ms-2">Log Out</Link>
+          <Link onClick={handleLogOut} className="btn ms-2">Log Out</Link>
         </> : <>
           <Link to='/login' className="btn">Login</Link>
         </>

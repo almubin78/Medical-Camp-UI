@@ -10,8 +10,7 @@ const Login = () => {
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
     
-    // console.log('process.env===',process.env.REACT_APP_apiKey);
-    // console.log('process.env.REACT_APP_authDomain===',process.env.REACT_APP_authDomain);
+    
     const handleGoogleSignIn = () => {
         googleLogin()
             .then(res => {
@@ -45,7 +44,7 @@ const Login = () => {
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Login now!</h1>
-                    <p className="py-6">To take my Services with Discount</p>
+                    <p className="py-6">To to join Our Medical Camp Services</p>
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <div className="card-body">
