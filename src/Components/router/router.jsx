@@ -1,28 +1,57 @@
-
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter} from 'react-router-dom';
 import RootPage from '../Pages/MainRoot/RootPage';
 import ErrorPage from '../Pages/ErrorPage';
 import Login from '../Pages/FormRelatedPages/Login';
 import Register from '../Pages/FormRelatedPages/Register';
+import PrivateRoute from '../Routes/PrivateRoute';
+import AvailableCamps from '../Pages/OtherPages/PrivateRoutes/AvailAbleCamps/AvailableCamps';
+import Dashboard from '../Pages/OtherPages/PrivateRoutes/Dashboard/Dashboard';
+import Profile from '../Pages/OtherPages/PrivateRoutes/Dashboard/DashboardOutlet/Profile';
+import HomeContainer from '../Pages/HomePages/HomeContainer';
+import ContactUs from '../Pages/OtherPages/ContactUs/ContactUs';
 
 const router = createBrowserRouter([
-    {
-        path:'/',
-        element:<RootPage/>,
-        children:[
-            {
-                path:'/login',
-                element:<Login/>
-            },
-            {
-                path:'/register',
-                element:<Register/>
-            },
-        ]
-    },{
-        path:'*',
-        element:<ErrorPage/>
-    }
-])
+  {
+    path: '/',
+    element: <RootPage />,
+    children: [
+      {
+        path: '/',
+        element: <HomeContainer/>,
+      },
+      {
+        path: '/login',
+        element: <Login />,
+      },
+      {
+        path: '/register',
+        element: <Register />,
+      },
+      {
+        path: '/contact',
+        element: <ContactUs/>
+      },
+      {
+        path: '/available',
+        element: <PrivateRoute><AvailableCamps /></PrivateRoute>,
+      },
+      
+    ],
+  },
+  {
+    path: '*',
+    element: <ErrorPage />,
+  },
+  {
+    path: '/dashboard',
+    element: <Dashboard />,
+    children: [
+      {
+        path: '/dashboard/profile',
+        element: <Profile />,
+      },
+    ],
+  },
+]);
 
 export default router;
