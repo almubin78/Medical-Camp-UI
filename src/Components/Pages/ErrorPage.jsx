@@ -1,10 +1,10 @@
 
-import { Link } from 'react-router-dom'; // Use Link if you're using React Router
+import { Link } from 'react-router-dom'; 
 
 const ErrorPage = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('https://i.ibb.co/PtjDMTf/png-clipart-http-404-user-interface-design-design-purple-text-thumbnail.png')" }}>
-      <div className="text-white text-center p-8">
+    <div className="min-h-screen flex items-center justify-center bg-cover bg-center">
+      <div className="text-white bg-purple-300 text-center p-8">
         <h1 className="text-4xl font-bold mb-4">404 - Not Found</h1>
         <p className="text-lg mb-8">Oops! The page you are looking for might be under construction.</p>
         <Link to="/">

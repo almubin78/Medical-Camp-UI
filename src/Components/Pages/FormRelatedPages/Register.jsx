@@ -6,6 +6,7 @@ import { useGlobalContext } from '../../AuthProvider/AuthContextFunction';
 const Register = () => {
     const { createUser, logOut } = useGlobalContext();
     const [err, setErr] = useState('');
+    const [errRegister, setErrRegister] = useState('');
     const navigate = useNavigate();
     const handleSignUp = (e) => {
         e.preventDefault();
@@ -38,12 +39,19 @@ const Register = () => {
                     timer: 1500
                 })
                 logOut()
-                    .then(() => {
-
+                    .then((res) => {
+                        if(res){
+                            // setErrRegister('')
+                        }
                         navigate('/login')
                     })
             })
-            .catch(err => console.error(err))
+            .catch(err => {
+                if(err){
+                    setErr('')
+                    setErrRegister('Email Already in Used')
+                }
+            })
     }
     return (
         // <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -62,6 +70,9 @@ const Register = () => {
                         <span className="label-text">Email</span>
                     </label>
                     <input name='email' type="email" placeholder="email" className="input input-bordered" />
+                    {errRegister && <>
+                        <p className='text-red-500'>{errRegister}</p>
+                    </>}
                 </div>
                 <div className="form-control">
                     <label className="label">
