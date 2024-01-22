@@ -3,7 +3,11 @@
 const AvailableCamps = () => {
     return (
         <div>
-            this is availAble camp page
+            Camp Info 
+            Join Camp button 
+            details
+        {/* optional but highly  Search Functionality, short by field*/}
+
         </div>
     );
 };
