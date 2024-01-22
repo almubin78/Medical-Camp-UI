@@ -12,7 +12,7 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 npm i -D daisyui@latest
 npm i firebase
-npm install --save react-awesome-slider
+<!-- npm install --save react-awesome-slider -->
 npm install swiper
 ```
 

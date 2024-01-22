@@ -8,11 +8,11 @@ const HomeContainer = () => {
     return (
         <div>
             <Banner/>
-            <div className="divider"></div>
+            <div className="divider">Popular medical camp section</div>
             <PopularCamps/>
-            <div className="divider"></div>
+            <div className="divider">Testimonials</div>
             <Testimonials/>
-            <div className="divider"></div>
+            <div className="divider">Comment</div>
             <Comment/>
             <div className="divider"></div>
         </div>

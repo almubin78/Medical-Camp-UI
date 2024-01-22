@@ -1,0 +1,82 @@
+
+[
+    {
+      "id": 1,
+      "name": "Healthy Living Camp",
+      "image": "camp-1.jpg",
+      "fees": "$50",
+      "date": "January 15, 2024",
+      "time": "10:00 AM - 3:00 PM",
+      "location": "City Park Medical Center",
+      "services": "General Checkup, Nutrition Consultation",
+      "professionals": "Dr. Smith, Dr. Johnson",
+      "targetAudience": "All Ages",
+      "participants": 0
+    },
+    {
+      "id": 2,
+      "name": "Heart Health Awareness Camp",
+      "image": "camp-2.jpg",
+      "fees": "$40",
+      "date": "February 1, 2024",
+      "time": "9:00 AM - 2:00 PM",
+      "location": "HeartCare Hospital",
+      "services": "Cardiac Screening, Blood Pressure Check",
+      "professionals": "Dr. Williams, Dr. Brown",
+      "targetAudience": "Adults",
+      "participants": 0
+    },
+    {
+      "id": 3,
+      "name": "Child Wellness Camp",
+      "image": "camp-3.jpg",
+      "fees": "$30",
+      "date": "March 10, 2024",
+      "time": "11:00 AM - 4:00 PM",
+      "location": "KidsHealth Clinic",
+      "services": "Pediatric Checkup, Immunization",
+      "professionals": "Dr. Davis, Dr. White",
+      "targetAudience": "Children (0-12)",
+      "participants": 0
+    },
+    {
+      "id": 4,
+      "name": "Dental Care Camp",
+      "image": "camp-4.jpg",
+      "fees": "$25",
+      "date": "April 5, 2024",
+      "time": "1:00 PM - 6:00 PM",
+      "location": "Smile Dental Center",
+      "services": "Dental Checkup, Teeth Cleaning",
+      "professionals": "Dr. Taylor, Dr. Thomas",
+      "targetAudience": "All Ages",
+      "participants": 0
+    },
+    {
+      "id": 5,
+      "name": "Women's Health Empowerment Camp",
+      "image": "camp-5.jpg",
+      "fees": "$35",
+      "date": "May 20, 2024",
+      "time": "2:00 PM - 7:00 PM",
+      "location": "Women's Wellness Center",
+      "services": "Women's Health Screening, Counseling",
+      "professionals": "Dr. Wilson, Dr. Miller",
+      "targetAudience": "Women (18+)",
+      "participants": 0
+    },
+    {
+      "id": 6,
+      "name": "Senior Citizens Wellness Camp",
+      "image": "camp-6.jpg",
+      "fees": "$20",
+      "date": "June 8, 2024",
+      "time": "10:30 AM - 3:30 PM",
+      "location": "Senior Health Pavilion",
+      "services": "Geriatric Health Checkup, Exercise Sessions",
+      "professionals": "Dr. Martinez, Dr. Adams",
+      "targetAudience": "Seniors (65+)",
+      "participants": 0
+    }
+  ]
+  
