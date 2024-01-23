@@ -1,0 +1,46 @@
+
+[
+    {
+      "id": 1,
+      "campName": "Healthy Living Camp",
+      "feedback": "Attending the Healthy Living Camp was a transformative experience. I learned a lot about nutrition and general well-being. The healthcare professionals were knowledgeable and caring.",
+      "rating": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": 2,
+      "campName": "Heart Health Awareness Camp",
+      "feedback": "The Heart Health Awareness Camp provided valuable insights into maintaining a healthy heart. The cardiac screening was thorough, and I appreciate the efforts of the medical team.",
+      "rating": 4,
+      "date": "2024-02-05"
+    },
+    {
+      "id": 3,
+      "campName": "Child Wellness Camp",
+      "feedback": "Taking my child to the Child Wellness Camp was a great decision. The pediatric checkup and immunization services were efficient, and the doctors were friendly and approachable.",
+      "rating": 4,
+      "date": "2024-03-15"
+    },
+    {
+      "id": 4,
+      "campName": "Dental Care Camp",
+      "feedback": "I visited the Dental Care Camp for a routine checkup, and the experience was excellent. The dental team was professional, and the facilities were clean and modern.",
+      "rating": 5,
+      "date": "2024-04-10"
+    },
+    {
+      "id": 5,
+      "campName": "Women's Health Empowerment Camp",
+      "feedback": "Attending the Women's Health Empowerment Camp was empowering. The health screening and counseling sessions were informative, and the atmosphere was supportive.",
+      "rating": 5,
+      "date": "2024-05-25"
+    },
+    {
+      "id": 6,
+      "campName": "Senior Citizens Wellness Camp",
+      "feedback": "The Senior Citizens Wellness Camp exceeded my expectations. The geriatric health checkup was thorough, and the exercise sessions were tailored to individual needs.",
+      "rating": 4,
+      "date": "2024-06-12"
+    }
+  ]
+  
