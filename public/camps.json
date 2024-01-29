@@ -11,7 +11,7 @@
       "services": "General Checkup, Nutrition Consultation",
       "professionals": "Dr. Smith, Dr. Johnson",
       "targetAudience": "All Ages",
-      "participants": 10
+      "participants": 24
     },
     {
       "id": 2,
@@ -24,7 +24,7 @@
       "services": "Cardiac Screening, Blood Pressure Check",
       "professionals": "Dr. Williams, Dr. Brown",
       "targetAudience": "Adults",
-      "participants": 0
+      "participants": 23
     },
     {
       "id": 3,
@@ -37,7 +37,7 @@
       "services": "Pediatric Checkup, Immunization",
       "professionals": "Dr. Davis, Dr. White",
       "targetAudience": "Children (0-12)",
-      "participants": 20
+      "participants": 22
     },
     {
       "id": 4,
@@ -50,7 +50,7 @@
       "services": "Dental Checkup, Teeth Cleaning",
       "professionals": "Dr. Taylor, Dr. Thomas",
       "targetAudience": "All Ages",
-      "participants": 0
+      "participants": 20
     },
     {
       "id": 5,
@@ -64,10 +64,11 @@
       "professionals": "Dr. Wilson, Dr. Miller",
       "targetAudience": "Women (18+)",
       "participants": 30
-    },
+    }
+    ,
     {
       "id": 6,
-      "name": "Senior Citizens Wellness Camp",
+      "name": "Senior Citizens Run Camp",
       "image": "https://www.greatseniorliving.com/assets/img/article-social-well-being-@3X.jpg",
       "fees": 20,
       "date": "June 8, 2024",
@@ -76,7 +77,49 @@
       "services": "Geriatric Health Checkup, Exercise Sessions",
       "professionals": "Dr. Martinez, Dr. Adams",
       "targetAudience": "Seniors (65+)",
-      "participants": 0
+      "participants": 25
+    }
+    ,
+    {
+      "id": 7,
+      "name": "Wellness Camp",
+      "image": "https://www.greatseniorliving.com/assets/img/article-social-well-being-@3X.jpg",
+      "fees": 20,
+      "date": "June 8, 2024",
+      "time": "10:30 AM - 3:30 PM",
+      "location": "Senior Health Pavilion",
+      "services": "Geriatric Health Checkup, Exercise Sessions",
+      "professionals": "Dr. Martinez, Dr. Adams",
+      "targetAudience": "Seniors (65+)",
+      "participants": 26
+    }
+    ,
+    {
+      "id": 8,
+      "name": "Camp",
+      "image": "https://www.greatseniorliving.com/assets/img/article-social-well-being-@3X.jpg",
+      "fees": 20,
+      "date": "June 8, 2024",
+      "time": "10:30 AM - 3:30 PM",
+      "location": "Senior Health Pavilion",
+      "services": "Geriatric Health Checkup, Exercise Sessions",
+      "professionals": "Dr. Martinez, Dr. Adams",
+      "targetAudience": "Seniors (65+)",
+      "participants": 29
+    }
+    ,
+    {
+      "id": 9,
+      "name": "Camp",
+      "image": "https://www.greatseniorliving.com/assets/img/article-social-well-being-@3X.jpg",
+      "fees": 20,
+      "date": "June 8, 2024",
+      "time": "10:30 AM - 3:30 PM",
+      "location": "Senior Health Pavilion",
+      "services": "Geriatric Health Checkup, Exercise Sessions",
+      "professionals": "Dr. Martinez, Dr. Adams",
+      "targetAudience": "Seniors (65+)",
+      "participants": 31
     }
   ]
   

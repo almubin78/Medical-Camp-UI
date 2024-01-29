@@ -10,7 +10,7 @@ const HomeContainer = () => {
             <Banner/>
             <div className="divider">Popular medical camp section</div>
             <PopularCamps/>
-            <div className="divider">Testimonials</div>
+            <div className="divider">Testimonial</div>
             <Testimonials/>
             <div className="divider">Comment</div>
             <Comment/>

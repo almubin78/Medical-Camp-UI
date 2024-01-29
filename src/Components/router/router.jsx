@@ -1,4 +1,4 @@
-import { createBrowserRouter} from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import RootPage from '../Pages/MainRoot/RootPage';
 import ErrorPage from '../Pages/ErrorPage';
 import Login from '../Pages/FormRelatedPages/Login';
@@ -9,6 +9,8 @@ import Dashboard from '../Pages/OtherPages/PrivateRoutes/Dashboard/Dashboard';
 import Profile from '../Pages/OtherPages/PrivateRoutes/Dashboard/DashboardOutlet/Profile';
 import HomeContainer from '../Pages/HomePages/HomeContainer';
 import ContactUs from '../Pages/OtherPages/ContactUs/ContactUs';
+import CampDetails from '../Pages/OtherPages/PrivateRoutes/CampDetails/CampDetails';
+import DashboardLayout from '../Pages/Dashboard/DashboardLayout';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <HomeContainer/>,
+        element: <HomeContainer />,
       },
       {
         path: '/login',
@@ -29,13 +31,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/contact',
-        element: <ContactUs/>
+        element: <ContactUs />
+      },
+      {
+        path: '/camp-details/:id',
+        element: <CampDetails />
       },
       {
         path: '/available',
         element: <PrivateRoute><AvailableCamps /></PrivateRoute>,
       },
-      
+
     ],
   },
   {
@@ -44,8 +50,13 @@ const router = createBrowserRouter([
   },
   {
     path: '/dashboard',
-    element: <Dashboard />,
+    element: <DashboardLayout/>,
     children: [
+      {
+        path: '/dashboard',
+        element: <Dashboard />,
+      }
+      ,
       {
         path: '/dashboard/profile',
         element: <Profile />,

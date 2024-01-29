@@ -3,6 +3,8 @@ import { useGlobalContext } from "../../AuthProvider/AuthContextFunction";
 
 const Navbar = () => {
   const { user, logOut } = useGlobalContext();
+  // const id = useParams();
+  // console.log(id);
   // console.log(user.photoURL);
   const handleLogOut = () => {
     logOut()
@@ -44,6 +46,7 @@ const Navbar = () => {
 
           <li className='mx-3'><Link to='/dashboard'>Dashboard</Link></li>
           <li className='mx-3'><Link to='/contact'>Contact Us</Link></li>
+          <li className='mx-3'><Link to={`/campDetails`}>Details</Link></li>
 
         </ul>
       </div>

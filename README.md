@@ -1,5 +1,6 @@
 * npm run dev
 # Medical Management System with React + Vite
+## [Live site](https://amazing-kheer-e22317.netlify.app/)
 ## [client Repo](https://github.com/programming-hero-web-course1/b8a12-client-side-almubin78)
 
 [requirement pdf](https://github.com/ProgrammingHero1/B8A12-The-Final-Effort/blob/main/Requerments-pdf-all/assignment12_category_0016.pdf)
