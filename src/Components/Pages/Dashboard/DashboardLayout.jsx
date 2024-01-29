@@ -4,9 +4,10 @@ import OrganizerDashboard from './OrganizerDashboard/OrganizerDashboard';
 import ParticipantDashboard from './ParticipantDashboard/ParticipantDashboard';
 import HealthcareDashboard from './HealthcareDashboard/HealthcareDashboard';
 import Footer from '../Footer/Footer';
+import { Link } from 'react-router-dom';
 
 const DashboardLayout = () => {
-    const [user] = useState({ role: 'healthcare professional' });
+    const [user] = useState({ role: 'participant' });
     console.log(user.role);
      // Assuming you have access to user data through your AuthContext
 
@@ -31,7 +32,7 @@ const DashboardLayout = () => {
     return (
         <div>
             <header>
-                navigatein
+                <Link to='/'>Back To home</Link>
             </header>
 
             {/* Render the appropriate dashboard based on user role */}

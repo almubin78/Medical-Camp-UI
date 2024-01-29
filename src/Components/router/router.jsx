@@ -12,6 +12,11 @@ import CampDetails from '../Pages/OtherPages/PrivateRoutes/CampDetails/CampDetai
 import DashboardLayout from '../Pages/Dashboard/DashboardLayout';
 import HealthcareProfessionalProfile from '../Pages/Dashboard/HealthcareDashboard/HealthcareProfessionalProfile';
 
+import PaymentHistory from '../Pages/Dashboard/ParticipantDashboard/ParticipantOutlet/PaymentHistory';
+import RegisteredCamps from '../Pages/Dashboard/ParticipantDashboard/ParticipantOutlet/RegisteredCamps';
+import FeedbackAndRatings from '../Pages/Dashboard/ParticipantDashboard/ParticipantOutlet/FeedbackAndRatings';
+import ProfileManagement from '../Pages/Dashboard/ParticipantDashboard/ParticipantOutlet/ProfileManagement';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -60,6 +65,26 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/professional-profile',
         element: <HealthcareProfessionalProfile/>,
+      },
+      {
+        path: '/dashboard/participant-profile',
+        element: <ProfileManagement/>,
+      },
+      {
+        path: '/dashboard/participant-payments',
+        element: <PaymentHistory/>,
+      },
+      {
+        path: '/dashboard/participant-registered-camps',
+        element: <RegisteredCamps/>,
+      },
+      {
+        path: '/dashboard/participant-feedback-and-ratings',
+        element: <FeedbackAndRatings/>,
+      },
+      {
+        path: '*',
+        element: <h3>welcome</h3>,
       },
     ],
   },
