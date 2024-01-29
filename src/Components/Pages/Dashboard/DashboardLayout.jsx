@@ -6,7 +6,7 @@ import HealthcareDashboard from './HealthcareDashboard/HealthcareDashboard';
 import Footer from '../Footer/Footer';
 
 const DashboardLayout = () => {
-    const [user, setUser] = useState({ role: 'participant' });
+    const [user] = useState({ role: 'healthcare professional' });
     console.log(user.role);
      // Assuming you have access to user data through your AuthContext
 

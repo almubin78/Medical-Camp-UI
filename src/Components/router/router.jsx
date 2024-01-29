@@ -6,11 +6,11 @@ import Register from '../Pages/FormRelatedPages/Register';
 import PrivateRoute from '../Routes/PrivateRoute';
 import AvailableCamps from '../Pages/OtherPages/PrivateRoutes/AvailAbleCamps/AvailableCamps';
 import Dashboard from '../Pages/OtherPages/PrivateRoutes/Dashboard/Dashboard';
-import Profile from '../Pages/OtherPages/PrivateRoutes/Dashboard/DashboardOutlet/Profile';
 import HomeContainer from '../Pages/HomePages/HomeContainer';
 import ContactUs from '../Pages/OtherPages/ContactUs/ContactUs';
 import CampDetails from '../Pages/OtherPages/PrivateRoutes/CampDetails/CampDetails';
 import DashboardLayout from '../Pages/Dashboard/DashboardLayout';
+import HealthcareProfessionalProfile from '../Pages/Dashboard/HealthcareDashboard/HealthcareProfessionalProfile';
 
 const router = createBrowserRouter([
   {
@@ -58,8 +58,8 @@ const router = createBrowserRouter([
       }
       ,
       {
-        path: '/dashboard/profile',
-        element: <Profile />,
+        path: '/dashboard/professional-profile',
+        element: <HealthcareProfessionalProfile/>,
       },
     ],
   },
