@@ -16,6 +16,10 @@ import PaymentHistory from '../Pages/Dashboard/ParticipantDashboard/ParticipantO
 import RegisteredCamps from '../Pages/Dashboard/ParticipantDashboard/ParticipantOutlet/RegisteredCamps';
 import FeedbackAndRatings from '../Pages/Dashboard/ParticipantDashboard/ParticipantOutlet/FeedbackAndRatings';
 import ProfileManagement from '../Pages/Dashboard/ParticipantDashboard/ParticipantOutlet/ProfileManagement';
+import OrganizerProfileManagement from '../Pages/Dashboard/OrganizerDashboard/OrganizerOutlets/OrganizerProfileManagement';
+import AddCamp from '../Pages/Dashboard/OrganizerDashboard/OrganizerOutlets/AddCamp';
+import ManageCamps from '../Pages/Dashboard/OrganizerDashboard/OrganizerOutlets/ManageCamps';
+import ManageRegisteredCamps from '../Pages/Dashboard/OrganizerDashboard/OrganizerOutlets/ManageRegisteredCamps';
 
 const router = createBrowserRouter([
   {
@@ -83,8 +87,20 @@ const router = createBrowserRouter([
         element: <FeedbackAndRatings/>,
       },
       {
-        path: '*',
-        element: <h3>welcome</h3>,
+        path: '/dashboard/organizer-profile',
+        element: <OrganizerProfileManagement/>,
+      },
+      {
+        path: '/dashboard/add-a-camp',
+        element: <AddCamp/>,
+      },
+      {
+        path: '/dashboard/manage-camps',
+        element: <ManageCamps/>,
+      },
+      {
+        path: '/dashboard/manage-registered-camps',
+        element: <ManageRegisteredCamps/>,
       },
     ],
   },

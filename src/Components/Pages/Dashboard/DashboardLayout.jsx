@@ -4,17 +4,27 @@ import OrganizerDashboard from './OrganizerDashboard/OrganizerDashboard';
 import ParticipantDashboard from './ParticipantDashboard/ParticipantDashboard';
 import HealthcareDashboard from './HealthcareDashboard/HealthcareDashboard';
 import Footer from '../Footer/Footer';
-import { Link } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
+// import axios from 'axios';
 
 const DashboardLayout = () => {
-    const [user] = useState({ role: 'participant' });
-    console.log(user.role);
-     // Assuming you have access to user data through your AuthContext
+    // const email = 'participant1@example.com';
+    // const userSt = "participant"
+    const [user] = useState({ role: 'organizer' });
+    // const [user,setUser] = useState([]);
+    // const [loading,setLoading]= useState(true);
 
-    // Determine the user's role (organizer, participant, healthcare professional)
-    // This is a simplified example, adjust based on your actual user data and roles
+    // useEffect(()=>{
+    //     axios.get('http://localhost:5000/users')
+    //     .then(res=>{
+    //         console.log(res.data);
+    //         setUser(res.data);
+    //         setLoading(false)
+    //     })
+    // },[])
+
+    // const userRole = user.find(u=>(u.email  === email) && (u.role === userSt ));
     const userRole = user ? user.role : '';
-
     // Render different dashboard components based on the user's role
     const renderDashboard = () => {
         switch (userRole) {
@@ -28,17 +38,23 @@ const DashboardLayout = () => {
                 return <div>No dashboard found for this user role.</div>;
         }
     };
-
+    // if(loading){
+    //     return <h3> Please wait</h3>
+    // }
     return (
         <div>
             <header>
-                <Link to='/'>Back To home</Link>
+                <Navbar/>
             </header>
 
             {/* Render the appropriate dashboard based on user role */}
-            {renderDashboard()}
+            <div className='min-h-[100vh]'>
+                {renderDashboard()}
+            </div>
 
-            <Footer/>
+            <div className=''>
+                <Footer />
+            </div>
         </div>
     );
 };
