@@ -34,8 +34,8 @@ const Banner = () => {
              className="swiper"
             >
                 {
-                    imgCollection.map((img,ind)=><SwiperSlide key={ind}><img src={img} className="h-full w-full object-cover"  alt='not found' /></SwiperSlide>)
-                    // imgCollection.map((img,ind)=><SwiperSlide key={ind}><img src={img} className='min-h-[250px] max-h-[450px]'  alt='not found' /></SwiperSlide>)
+                    // imgCollection.map((img,ind)=><SwiperSlide key={ind}><img src={img} className="h-full w-full object-cover"  alt='not found' /></SwiperSlide>)
+                    imgCollection.map((img,ind)=><SwiperSlide key={ind}><img src={img} className='min-h-[250px] max-h-[450px] mx-auto'  alt='not found' /></SwiperSlide>)
                 }
                 
             </Swiper>

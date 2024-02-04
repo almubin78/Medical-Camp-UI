@@ -11,7 +11,7 @@ const PopularCamps = () => {
         const fetchData = async () => {
             try {
                 const [campsResponse] = await Promise.all([
-                    axios.get('camps.json'),
+                    axios.get('https://medical-camp-server-lyart.vercel.app/camps'),
                     // axios.get('testimonials.json'), 
                 ]);
 

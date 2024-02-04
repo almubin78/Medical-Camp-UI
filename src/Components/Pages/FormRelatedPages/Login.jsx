@@ -15,6 +15,7 @@ const Login = () => {
         googleLogin()
             .then(res => {
                 const user = res.user;
+                
                 console.log(user);
                 navigate('/')
             })

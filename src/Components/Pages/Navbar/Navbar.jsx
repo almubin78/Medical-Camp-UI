@@ -1,7 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import { useGlobalContext } from "../../AuthProvider/AuthContextFunction";
+// import useRole from "../../Hooks/useRole";
 
 const Navbar = () => {
+  // const role = useRole()
   const { user, logOut } = useGlobalContext();
   // const id = useParams();
   // console.log(id);
@@ -44,6 +46,9 @@ const Navbar = () => {
           <li className='mx-3'><Link to='/'>Home</Link></li>
           <li className='mx-3'><Link to='/available'>Available Camps</Link></li>
 
+          {/* {
+            role && <li className='mx-3'><Link to={`/dashboard/${role}`}>Dashboard</Link></li>
+          } */}
           <li className='mx-3'><Link to='/dashboard'>Dashboard</Link></li>
           <li className='mx-3'><Link to='/contact'>Contact Us</Link></li>
           <li className='mx-3'><Link to={`/campDetails`}>Details</Link></li>

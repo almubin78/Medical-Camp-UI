@@ -5,7 +5,6 @@ import Login from '../Pages/FormRelatedPages/Login';
 import Register from '../Pages/FormRelatedPages/Register';
 import PrivateRoute from '../Routes/PrivateRoute';
 import AvailableCamps from '../Pages/OtherPages/PrivateRoutes/AvailAbleCamps/AvailableCamps';
-import Dashboard from '../Pages/OtherPages/PrivateRoutes/Dashboard/Dashboard';
 import HomeContainer from '../Pages/HomePages/HomeContainer';
 import ContactUs from '../Pages/OtherPages/ContactUs/ContactUs';
 import CampDetails from '../Pages/OtherPages/PrivateRoutes/CampDetails/CampDetails';
@@ -20,6 +19,9 @@ import OrganizerProfileManagement from '../Pages/Dashboard/OrganizerDashboard/Or
 import AddCamp from '../Pages/Dashboard/OrganizerDashboard/OrganizerOutlets/AddCamp';
 import ManageCamps from '../Pages/Dashboard/OrganizerDashboard/OrganizerOutlets/ManageCamps';
 import ManageRegisteredCamps from '../Pages/Dashboard/OrganizerDashboard/OrganizerOutlets/ManageRegisteredCamps';
+import Converter from '../Pages/Practice/Converter';
+import ParticipantDashboard from '../Pages/Dashboard/ParticipantDashboard/ParticipantDashboard';
+import OrganizerDashboard from '../Pages/Dashboard/OrganizerDashboard/OrganizerDashboard';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login />,
+      },
+      {
+        path: '/cal',
+        element: <Converter />,
       },
       {
         path: '/register',
@@ -59,51 +65,65 @@ const router = createBrowserRouter([
   },
   {
     path: '/dashboard',
-    element: <DashboardLayout/>,
+
+    element: <PrivateRoute> <DashboardLayout /></PrivateRoute>,
     children: [
-      {
-        path: '/dashboard',
-        element: <Dashboard />,
-      }
-      ,
-      {
-        path: '/dashboard/professional-profile',
-        element: <HealthcareProfessionalProfile/>,
-      },
-      {
-        path: '/dashboard/participant-profile',
-        element: <ProfileManagement/>,
-      },
-      {
-        path: '/dashboard/participant-payments',
-        element: <PaymentHistory/>,
-      },
-      {
-        path: '/dashboard/participant-registered-camps',
-        element: <RegisteredCamps/>,
-      },
-      {
-        path: '/dashboard/participant-feedback-and-ratings',
-        element: <FeedbackAndRatings/>,
-      },
-      {
-        path: '/dashboard/organizer-profile',
-        element: <OrganizerProfileManagement/>,
-      },
-      {
-        path: '/dashboard/add-a-camp',
-        element: <AddCamp/>,
-      },
-      {
-        path: '/dashboard/manage-camps',
-        element: <ManageCamps/>,
-      },
-      {
-        path: '/dashboard/manage-registered-camps',
-        element: <ManageRegisteredCamps/>,
-      },
+
     ],
   },
+  {
+    path: '/dashboard/organizer',
+    element: <OrganizerDashboard />,
+    children: [
+      
+      {
+        path: '/dashboard/organizer/profile',
+        element: <OrganizerProfileManagement />,
+      },
+      {
+        path: '/dashboard/organizer/add-a-camp',
+        element: <AddCamp />,
+      },
+      {
+        path: '/dashboard/organizer/manage-camps',
+        element: <ManageCamps />,
+      },
+      {
+        path: '/dashboard/organizer/manage-registered-camps',
+        element: <ManageRegisteredCamps />,
+      },
+      {
+        path: '/dashboard/organizer/professional-profile',
+        element: <HealthcareProfessionalProfile />,
+      },
+    ]
+
+  },
+
+  // Participant Dashboard
+  {
+    path: '/dashboard/participant',
+    element: <ParticipantDashboard />,
+    children:[
+      {
+        path: '/dashboard/participant/profile',
+        element: <ProfileManagement />,
+      },
+      {
+        path: '/dashboard/participant/payments',
+        element: <PaymentHistory />,
+      },
+      {
+        path: '/dashboard/participant/registered-camps',
+        element: <RegisteredCamps />,
+      },
+      {
+        path: '/dashboard/participant/feedback-and-ratings',
+        element: <FeedbackAndRatings />,
+      },
+    ]
+  },
+  
 ]);
 
 export default router;
