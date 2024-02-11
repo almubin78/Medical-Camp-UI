@@ -8,9 +8,7 @@ const ParticipantDashboard = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <nav className="col-span-1 md:col-span-1">
                     <ul className="space-y-4">
-                        <li>
-                            <Link to="/dashboard" className="block py-2 px-4 rounded-lg text-lg text-blue-800 bg-blue-200 hover:bg-blue-300 hover:text-blue-900">Home</Link>
-                        </li>
+                        
                         <li>
                             <Link to="/dashboard/participant/profile" className="block py-2 px-4 rounded-lg text-lg text-blue-800 bg-blue-200 hover:bg-blue-300 hover:text-blue-900">Profile Management</Link>
                         </li>

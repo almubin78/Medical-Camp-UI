@@ -21,9 +21,9 @@ const useRole = () => {
             });
     }, [user?.email]);
     // return role
-    return "participant" ////just wow
+    // return "participant" ////just wow
     // return "healthcare professional" 
-    // return "organizer" 
+    return "organizer" 
 };
 
 export default useRole;
